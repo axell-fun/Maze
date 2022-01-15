@@ -18,9 +18,12 @@ public class LevelSplash : MonoBehaviour
         if (!IsFirstStart)
         {
             _splash.SetActive(true);
-            _splash.GetComponent<Image>().DOFade(MinFade, _alphaChangeTime);
+            _splash.GetComponent<Image>().DOFade(MinFade, _alphaChangeTime).OnComplete(() =>
+            {
+                _splash.SetActive(false);
+            });
         }
-        
+
         IsFirstStart = false;
     }
 
@@ -34,7 +37,6 @@ public class LevelSplash : MonoBehaviour
         splashImage.DOFade(MaxFade, _alphaChangeTime).OnComplete(() =>
         {
             fadeChanged?.Invoke();
-            _splash.SetActive(false);
         });
     }
 }

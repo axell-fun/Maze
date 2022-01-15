@@ -48,7 +48,7 @@ public class MazeSpawner : MonoBehaviour
                 }
                 else
                 {
-                    if (x == 0 && y == 00)
+                    if (x == 0 && y == 0)
                         continue;
 
                     if (Random.Range(MinPercentage, MaxPercentage) < _deadZoneSpawnChance && _maze.GetCell(x, y).IsFloor)

@@ -98,7 +98,7 @@ public class MazeGenerator : MonoBehaviour
                 chosen.ChangeStatusWallLeft(false);
         }
     }
-
+    
     private void PlaceMazeExit(MazeGeneratorCell[,] maze)
     {
         MazeGeneratorCell finishCell = maze[0, 0];
