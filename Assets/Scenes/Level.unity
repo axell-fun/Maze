@@ -158,7 +158,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &167636257
 MonoBehaviour:
@@ -874,7 +874,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1104420917
 MonoBehaviour:
@@ -1624,6 +1624,7 @@ MonoBehaviour:
   _playerController: {fileID: 987795818}
   _mazeSpawner: {fileID: 1940897332}
   _levelSplash: {fileID: 1911418844}
+  _indexGameScene: 0
 --- !u!114 &1940897334
 MonoBehaviour:
   m_ObjectHideFlags: 0
