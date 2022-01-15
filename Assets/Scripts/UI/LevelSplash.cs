@@ -34,6 +34,7 @@ public class LevelSplash : MonoBehaviour
         splashImage.DOFade(MaxFade, _alphaChangeTime).OnComplete(() =>
         {
             fadeChanged?.Invoke();
+            _splash.SetActive(false);
         });
     }
 }
