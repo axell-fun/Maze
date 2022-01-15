@@ -1625,6 +1625,7 @@ MonoBehaviour:
   _mazeSpawner: {fileID: 1940897332}
   _levelSplash: {fileID: 1911418844}
   _indexGameScene: 0
+  _timeToLoadLevel: 1
 --- !u!114 &1940897334
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -11,6 +11,7 @@ public class LevelController : MonoBehaviour
     [SerializeField] private MazeSpawner _mazeSpawner;
     [SerializeField] private LevelSplash _levelSplash;
     [SerializeField] private int _indexGameScene;
+    [SerializeField] private float _timeToLoadLevel;
     
     private NavMeshSurface _surface;
 
@@ -34,6 +35,13 @@ public class LevelController : MonoBehaviour
 
     private void EndGame()
     {
+        StartCoroutine(LoadScene());
+    }
+
+    private IEnumerator LoadScene()
+    {
+        yield return new WaitForSeconds(_timeToLoadLevel);
+        
         _levelSplash.TurnOnSplash(() =>
         {
             SceneManager.LoadScene(_indexGameScene);
